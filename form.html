@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> list of element required for the form</h1>
+    <form action="" method="">
+
+    <div>
+        <label for="Name">Name</label>
+        <input type="name" id="Name" placeholder="please input the name" required />
+    </div>
+
+    <div>
+        <label for="phone">Phone Number</label>
+        <input type="number" id="phone" required/>
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email"/>
+    </div>
+    
+
+    <div>
+        <label for="password">password</label>
+        <input type="password" id="password"/>
+    </div>
+    <div>
+        <label for="Facebook profile">Facebook profile</label>
+        <input type="url" id="Facebook profile"/>
+    </div>
+
+    <div>
+        <label for="DOB">DOB</label>
+        <input type="date" />
+    </div>
+
+    <div>
+        <label for="Message">Message</label><br>
+        <textarea name="" id="" cols="30" rows="10" minlength="5" maxlength="50"></textarea>
+    </div>
+    <div>
+        <label for="">Select gender</label>
+        <!-- radio button -->
+        <input type="radio" name="gender" /><label for="male">male</label>
+        <input type="radio" name="gender" /><label for="female">female</label>
+        <input type="radio" name="gender" /><label for="others">others</label>
+    </div>
+<br>
+ <!-- checkbox -->
+    <div>
+       
+        <input type="checkbox" required/><label for="agree">I agree with the condition</label>
+    </div><br>
+    <div>
+       <label for="">Choose your best fruits</label><br>
+        <input type="checkbox"/><label for="">Tomato</label><br>
+        <input type="checkbox"/><label for="">Potato</label><br>
+        <input type="checkbox"/><label for="">Capsicum</label><br>
+        <input type="checkbox"/><label for="">Carrot</label><br>
+    </div><br>
+<div>
+    <label for="select the price">Select the price</label>
+    <input type="range" min="1" max="90" value="60" />
+
+</div><br>
+
+<div>
+    <label for="select fruits">Select the fruits</label>
+    <select name="" id="">
+        <option value="">apple</option>
+        <option value="">banana</option>
+        <option value="">graps</option>
+        <option value="">banana</option>
+    </select>
+</div>
+
+<div>
+    <label for="select fruits and vegetable">Select the fruits and vegetable</label><br>
+    <select name="" id="" multiple>
+        <optgroup label="fruits">
+            <option value="">apple</option>
+            <option value="">banana</option>
+            <option value="">graps</option>
+            <option value="">banana</option>
+        </optgroup>
+
+        <optgroup label="vegetable">
+            <option value="">potato</option>
+            <option value="">tomato</option>
+            <option value="">capciscum</option>
+            <option value="">beans</option>
+        </optgroup>
+    </select>
+</div><br>
+<div>
+    <label for="fruits">Select the fruits</label>
+    <input type="text" id="" list="fruitlist"/>
+    <datalist id="fruitlist">
+        <option value="apple">apple</option>
+        <option value="banana">banana</option>
+        <option value="grapes">grapes</option>
+        <option value="papaya">papaya</option>
+        <option value="mango">mango</option>
+        <option value="orange">orange</option>
+    </datalist> 
+</div>
+<!-- <button> send </button> --> 
+<!-- also possible  -->
+<input type="submit" value="send" />   
+</form>
+</body>
+</html>
